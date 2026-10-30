@@ -19,18 +19,25 @@ A lógica de negócio fica isolada em `core.py` e a interface em `app.py`.
 
 ## Link público
 
-> **Pendente de deploy do app.** O código já está publicado no GitHub:
-> https://github.com/TayMG/Sergio-Extra
+> **Status:** o código está publicado no GitHub, mas o app ainda não foi
+> publicado no Streamlit Community Cloud.
 >
-> O Streamlit Community Cloud exige autenticação na conta do autor do
-> repositório, então o link público do app ainda não foi criado. O projeto
-> está pronto para o deploy.
+> **Publicar agora:** [abrir o formulário de deploy já preenchido](https://share.streamlit.io/deploy?repository=TayMG%2FSergio-Extra&branch=main&mainModule=app.py)
 >
-> Depois de publicar (passo a passo abaixo), o endereço terá o formato:
+> Entre com a conta GitHub `TayMG`, confira os campos abaixo e clique em
+> **Deploy**:
 >
-> `https://<seu-usuario>-<seu-repositorio>-<app>.streamlit.app`
+> | Campo | Valor |
+> |---|---|
+> | Repository | `TayMG/Sergio-Extra` |
+> | Branch | `main` |
+> | Main file path | `app.py` |
 >
-> Cole o link final nesta seção do README.
+> Depois do deploy, o Streamlit gera uma URL no formato
+> `https://<subdominio>.streamlit.app`. Cole essa URL final nesta seção.
+>
+> Se o formulário não abrir preenchido, use o passo a passo da seção
+> [Deploy no Streamlit Community Cloud](#deploy-no-streamlit-community-cloud).
 
 ---
 
@@ -293,19 +300,40 @@ Os testes cobrem:
 
 ## Deploy no Streamlit Community Cloud
 
-1. Crie um repositório no GitHub e envie os arquivos deste projeto.
-2. Acesse [share.streamlit.io](https://share.streamlit.io) e entre com a conta
-   do GitHub.
-3. Clique em **New app**.
-4. Selecione o repositório, a branch (`main`) e o arquivo principal `app.py`.
+O repositório já está publicado em
+https://github.com/TayMG/Sergio-Extra. Falta apenas criar o app no Streamlit
+Community Cloud.
+
+### Caminho rápido
+
+1. Abra o
+   [formulário de deploy já preenchido](https://share.streamlit.io/deploy?repository=TayMG%2FSergio-Extra&branch=main&mainModule=app.py).
+2. Entre com a conta GitHub que tem acesso ao repositório `TayMG/Sergio-Extra`.
+3. Confirme os campos:
+   - **Repository:** `TayMG/Sergio-Extra`
+   - **Branch:** `main`
+   - **Main file path:** `app.py`
+4. Escolha um subdomínio, se desejar (por exemplo,
+   `sergio-extra-lista-ordenada`).
 5. Clique em **Deploy**.
-6. Copie a URL gerada, que terá um formato parecido com
-   `https://seu-usuario-seu-repo-app.streamlit.app`.
-7. Atualize a seção “Link público” deste README com a URL.
+6. Aguarde a instalação do `requirements.txt` e a primeira execução.
+7. Copie a URL `https://<subdominio>.streamlit.app` e atualize a seção
+   [Link público](#link-publico) deste README.
+
+### Caminho manual
+
+1. Acesse [share.streamlit.io](https://share.streamlit.io) e entre com a conta
+   do GitHub.
+2. Clique em **New app**.
+3. Selecione o repositório `TayMG/Sergio-Extra`, a branch `main` e o arquivo
+   principal `app.py`.
+4. Clique em **Deploy**.
 
 Não é necessário configurar segredos, banco de dados ou variáveis de
 ambiente. O `requirements.txt` instala o Streamlit e suas dependências, e o
 estado inicial é criado automaticamente por `st.session_state.setdefault`.
+Se a tela de configuração avançada pedir uma versão do Python, escolha
+**3.11** ou superior.
 
 ---
 

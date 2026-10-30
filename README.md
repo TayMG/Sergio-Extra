@@ -13,13 +13,18 @@ página:
 
 A lógica de negócio fica isolada em `core.py` e a interface em `app.py`.
 
+**Repositório GitHub:** https://github.com/TayMG/Sergio-Extra
+
 ---
 
 ## Link público
 
-> **Pendente de deploy.** O Streamlit Community Cloud exige autenticação na
-> conta do autor do repositório, então o link público não pode ser criado
-> dentro deste ambiente de execução. O projeto já está pronto para o deploy.
+> **Pendente de deploy do app.** O código já está publicado no GitHub:
+> https://github.com/TayMG/Sergio-Extra
+>
+> O Streamlit Community Cloud exige autenticação na conta do autor do
+> repositório, então o link público do app ainda não foi criado. O projeto
+> está pronto para o deploy.
 >
 > Depois de publicar (passo a passo abaixo), o endereço terá o formato:
 >

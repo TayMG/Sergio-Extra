@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+ENV/
+
+# Streamlit / segredos locais
+.streamlit/secrets.toml
+
+# Logs e arquivos temporários
+*.log
+streamlit.out
+streamlit.err
+.DS_Store
+Thumbs.db
+
+# Editores
+.idea/
+.vscode/
